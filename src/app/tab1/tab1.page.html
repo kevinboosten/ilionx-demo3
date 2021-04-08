@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-title> Tab 1 </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,5 +11,9 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-button mode="md" (click)="presentAlert()">ion button</ion-button>
+  <ion-button color="secondary" (click)="presentActionSheet()"
+    >ion button</ion-button
+  >
+  <ion-button color="tertiary">ion button</ion-button>
 </ion-content>
